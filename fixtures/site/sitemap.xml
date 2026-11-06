@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{origin}}/</loc></url>
+  <url><loc>{{origin}}/refunds</loc></url>
+  <url><loc>{{origin}}/refunds/#faq</loc></url>
+  <url><loc>{{origin}}/old-refunds</loc></url>
+  <url><loc>{{origin}}/contact</loc></url>
+  <url><loc>{{origin}}/login</loc></url>
+  <url><loc>{{origin}}/app</loc></url>
+  <url><loc>{{origin}}/account</loc></url>
+  <url><loc>{{origin}}/members</loc></url>
+  <url><loc>{{origin}}/missing</loc></url>
+  <url><loc>{{origin}}/slow</loc></url>
+  <url><loc>{{origin}}/private/secret</loc></url>
+  <url><loc>{{origin}}/guide.pdf</loc></url>
+  <url><loc>https://other-site.example/offsite</loc></url>
+</urlset>

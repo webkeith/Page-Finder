@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Refund Policy | Sample Store</title>
+  <style>
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+    .offscreen { position: absolute; left: -9999px; }
+    .gone { display: none; }
+    .ghost { visibility: hidden; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+  </style>
+</head>
+<body>
+  <h1>Refund policy</h1>
+  <p id="p-visible">You can request a refund within 30 days of purchase.</p>
+  <p>Prices like $5.00 (USD) and C++ courses are not refundable. a.b is literal.</p>
+
+  <div class="gone"><p>Old refund wording kept for reference.</p></div>
+  <p class="ghost">Ghost refund text.</p>
+  <p hidden>Hidden attribute refund text.</p>
+  <p aria-hidden="true">Aria hidden refund text.</p>
+  <span class="sr-only">Screen reader refund hint.</span>
+  <p class="offscreen">Offscreen refund banner.</p>
+
+  <details>
+    <summary>Refund FAQ</summary>
+    <p>Accordion answer: refunds take 5 business days.</p>
+  </details>
+
+  <div role="tablist">
+    <button role="tab" aria-selected="true">Shipping</button>
+    <button role="tab" aria-selected="false">Returns</button>
+  </div>
+  <div role="tabpanel" class="tab-panel active"><p>Shipping is free over $50.</p></div>
+  <div role="tabpanel" class="tab-panel"><p>Returns tab: refund labels are emailed.</p></div>
+
+  <!-- TODO: update refund wording before launch -->
+
+  <h2>Contact us</h2>
+  <form id="contact-form" name="contact" action="/contact" method="post">
+    <label for="c-name">Your name</label><input id="c-name" name="name" type="text" required />
+    <label for="c-email">Email</label><input id="c-email" name="email" type="email" placeholder="you@example.com" required />
+    <label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Describe your refund request"></textarea>
+    <input type="submit" value="Send refund request" />
+  </form>
+
+  <h2>Account</h2>
+  <form id="login-form" aria-label="Customer login" action="/account/login" method="post">
+    <input name="username" type="email" placeholder="Email address" />
+    <input name="password" type="password" placeholder="Password" />
+    <button type="submit">Sign in</button>
+  </form>
+
+  <form role="search" action="/search" aria-label="Site search">
+    <input type="search" name="q" placeholder="Search refunds and returns" />
+  </form>
+
+  <form id="newsletter" name="newsletter-signup" class="gone">
+    <input type="email" name="email" placeholder="Join our newsletter" />
+  </form>
+
+  <div id="app-filters">
+    <input type="text" name="coupon" placeholder="Coupon code" />
+  </div>
+</body>
+</html>
